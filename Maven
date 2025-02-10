@@ -1,0 +1,29 @@
+Understanding Maven and Dependency Management in Java
+🔹 Why Dependency Management is Important?
+When sharing a project, others need to download the exact versions of required JAR files. This process can be complex, but Maven simplifies it by managing dependencies automatically.
+
+🔹 Maven as a Solution
+
+Maven helps manage standard dependencies efficiently.
+Dependencies can be downloaded from Maven Repository.
+It provides archetypes, which act as templating tools for project structures.
+Configuration is done in pom.xml (Project Object Model).
+🔹 Key Concept: GAV (GroupID, ArtifactID, VersionID)
+Every library in Maven follows:
+✅ GroupID – A unique package identifier.
+✅ ArtifactID – The name of the project/library.
+✅ VersionID – The specific version of the library.
+
+🔹 Including Dependencies in pom.xml
+All required dependencies must be enclosed within:
+
+xml
+Copy
+Edit
+<dependencies>
+   <!-- Add dependencies here -->
+</dependencies>
+🔹 Effective POM / Super POM
+Maven has a Super POM, which acts as a parent to all pom.xml files, providing default configurations.
+
+📌 Maven streamlines project setup and dependency management, making Java development more efficient!
